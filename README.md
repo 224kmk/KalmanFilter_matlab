@@ -111,7 +111,7 @@
 
        
 + `칼만 필터 예제(SimpleKalman)` :  
-<img src ="/Images/Simplekalman/SimpleKalman_.png">
+    <img src ="/Images/Simplekalman/SimpleKalman_.png">  
      - 위 그림은 칼만 필터 처리한 추정값 그래프이다.
      - 실선이 칼만 필터로 추정한 전압, 점선은 측정값임.
      - 측정 잡음 때문에 측정값이 상당히 넓게 퍼져있는 반면 칼만 필터는 전체적으로 참 값(14.4V) 주위에 모여있음.
