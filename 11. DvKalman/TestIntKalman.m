@@ -9,31 +9,26 @@ Nsamples = length(t);
 
 Xsaved = zeros(Nsamples, 2);
 Zsaved = zeros(Nsamples, 1);
-TVel = zeros(Nsamples, 1);
 
 for k=1:Nsamples
-  [z,v] = GetPos();      
-  [pos vel] = DvKalman(z);
+  z = GetVel();      
+  [pos vel] = IntKalman(z);
   
   Xsaved(k, :) = [pos vel];
   Zsaved(k)    = z;
-  TVel(k) = v;
 end
 
 
 figure
-hold on
 plot(t, Xsaved(:, 1))
-plot(t, Zsaved(:), 'r.')
 xlabel('Time [sec]')
-ylabel('Position [m]')
-legend('Kalman Filter', 'Measurements')
+ylabel('Position')
+
 
 figure
 hold on
 plot(t, Xsaved(:, 2))
-plot(t, TVel(:), 'r-.');
+plot(t, Zsaved(:), 'r.')
 xlabel('Time [sec]')
 ylabel('Velocity [m/s]')
-legend('Kalman Filter', 'True speed')
-
+legend('Kalman Filter', 'Measurements')

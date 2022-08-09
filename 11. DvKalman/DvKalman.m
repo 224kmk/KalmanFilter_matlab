@@ -1,6 +1,7 @@
 function [pos vel] = DvKalman(z)
 %
-%
+% GetPos
+% 위치로 속도 측정하기
 persistent A H Q R 
 persistent x P
 persistent firstRun
