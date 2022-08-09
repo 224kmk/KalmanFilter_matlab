@@ -110,7 +110,7 @@
     --> 이 추정값이 칼만 필터의 최종 결과물.
 
        
-+ `칼만 필터 예제(SimpleKalman)` :  
++ `칼만 필터 예제(SimpleKalman)` :   
     <img src ="/Images/Simplekalman/SimpleKalman_.png">  
      - 위 그림은 칼만 필터 처리한 추정값 그래프이다.
      - 실선이 칼만 필터로 추정한 전압, 점선은 측정값임.
@@ -149,4 +149,5 @@
     --> 예측값은 추정값에 기여하는 바가 작다.
  
 
-     
++ `칼만 필터 예제(SimpleKalman)` : 
+<img src ="/Images/Simplekalman/DvKalman/DvKalman_Position.fig">
