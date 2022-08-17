@@ -21,7 +21,7 @@ if isempty(firstRun)
   R = [ 50  0
          0 50 ];
 
-  x = [0, 0, 0, 0]';
+  x = [0, 0, 0, 0]'; % 추정값 초기위치.
   P = 100*eye(4);
   
   firstRun = 1;
