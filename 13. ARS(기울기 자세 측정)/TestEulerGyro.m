@@ -22,14 +22,14 @@ t = 0:dt:Nsamples*dt-dt;
 figure
 plot(t, PhiSaved)
 xlabel('Time [sec]')
-ylabel('Roll rate [deg/s]')
+ylabel('Roll angle [deg]')
 
 figure
 plot(t, ThetaSaved)
 xlabel('Time [sec]')
-ylabel('Pitch rate [deg/s]')
+ylabel('Pitch angle [deg]')
 
 figure
 plot(t, PsiSaved)
 xlabel('Time [sec]')
-ylabel('Yaw rate [deg/s]')
+ylabel('Yaw angle [deg]')
